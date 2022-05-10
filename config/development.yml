@@ -1,0 +1,28 @@
+
+# service name
+serviceName: api_service
+envelopment: development
+# listen address
+listen: 0.0.0.0
+#listen port
+port: 4000
+temporalia:
+  hostPort: 127.0.0。1:7233
+
+# mysql db
+mysql:
+  host: 
+  username: 
+  pwd: 
+  db: 
+# logger config
+logger: zap
+log-level: debug
+log-outputs: stdoutandfile
+log-file-config-json: "{\"filename\": \"info.log\",\"maxsize\": 10, \"maxbackups\": 5, \"compress\": true}"
+
+# temporal
+temporal:
+  hostPort: 127.0.0.1:7233
+  jobRunInstanceQueue: 
+  jobRunInstanceWorkflow: 
